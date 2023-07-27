@@ -1,0 +1,29 @@
+
+
+.forgot-pass{
+    text-align: center;
+    padding: 300px 0;
+}
+
+.class-form5-control {
+    width: 280px;
+    /* align-items: center; */
+    text-align: center;
+    border-radius: 4px;
+    height: 2rem;
+    
+    
+}
+
+#butn-5{
+        margin-left: 1rem;
+    width: 10rem;
+    height: 36px;
+    background-color: #2bb0a8;
+  
+}
+
+.not-exist{
+    text-align: center;
+    padding: 300px 0;
+}

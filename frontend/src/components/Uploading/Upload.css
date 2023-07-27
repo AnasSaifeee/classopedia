@@ -1,0 +1,127 @@
+.title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+.file-card {
+    margin-top: 1rem;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed #cbd5e0;
+    background-color: #edf2f7;
+    height: 13rem;
+    min-height: 157px;
+}
+
+.time_block12 {
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.file-inputs {
+    margin-top: 1rem;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.file-inputs>input {
+    z-index: 2;
+    opacity: 0;
+    position: relative;
+    text-align: right;
+    cursor: pointer;
+    height: 46px;
+    width: 100%;
+}
+
+.file-inputs>button {
+    top: 0;
+    height: 3rem;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #f55e30;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s;
+    box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.5);
+}
+
+.infocontent {
+    margin-top: 1rem;
+    font: 1.5rem;
+}
+
+.main {
+    font-weight: bold;
+    text-align: center;
+    /* margin-bottom: 0.4em; */
+}
+
+.info {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.uploadassignmentcontent {
+    margin-top: 1rem;
+    color: #343a4a;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 20%;
+
+}
+
+/* .uploadblacky
+{
+    background-color: black;
+    height: 110vh;
+    width: 100%;
+    opacity: 0.9;
+    transform: translateY(-95%);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+.deadline {
+    margin-right: 1rem;
+}
+
+.uploadheading {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.uploadassignmentbody {
+    height: 100vh;
+    background: rgb(248, 246, 246);
+
+}
+
+.submitbutton {
+    width: 8rem;
+    height: 2rem;
+    background: #2BB0A8;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+textarea {
+    resize: none;
+}

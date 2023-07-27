@@ -1,0 +1,194 @@
+.Teacherheading {
+    text-align: center;
+    transform: translateY(2rem);
+    font-weight: 600;
+}
+
+.photo_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 1rem; */
+    padding-top: 1rem;
+}
+
+.pblock {
+    padding-bottom: 2rem;
+    border: solid 2px rgb(43, 176, 168);
+    background: rgba(43, 176, 168, 0.05);
+    opacity: 0.85;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.emp-profile {
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    text-align: center;
+    transform: translateY(3rem);
+    margin: 0 15%;
+
+    /* box-shadow: rgb(0 0 0 / 17%) 0px -23px 25px 0px inset, rgb(0 0 0 / 15%) 0px -36px 30px 0px inset, rgb(0 0 0 / 10%) 0px -79px 40px 0px inset, rgb(0 0 0 / 6%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 8px 4px, rgb(0 0 0 / 9%) 0px 16px 8px, rgb(0 0 0 / 9%) 0px 32px 16px; */
+}
+
+.profile-img {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.profile-img img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+
+
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.profile-head h5 {
+    color: #333;
+}
+
+.profile-head h6 {
+    color: #0062cc;
+}
+
+.profile-edit-btn {
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.proile-rating {
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+
+.proile-rating span {
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+.profile-work {
+    padding: 14%;
+    margin-top: -15%;
+}
+
+
+.teacherInfo {
+    justify-content: center;
+    display: flex;
+    margin: 0 10%;
+    font-size: 100%;
+    background: #d6e6e7;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.profile-head {
+    text-align: center;
+    /* margin-bottom: 1rem; */
+    /* margin-left: 1rem; */
+}
+
+.profile-head>h4 {
+    font-weight: 600;
+}
+
+.profilebuttons>button {
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 10rem;
+    margin-right: 1rem;
+    background: #198754;
+    margin-bottom: 2rem;
+}
+
+#butn {
+    border: none;
+}
+
+.keys {
+    text-align: initial;
+    transform: translateX(25%);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.values {
+    text-align: initial;
+    transform: translateX(30%);
+    color: #00684A;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#prof_block {
+    margin-top: 20px;
+    
+}
+
+.teacherinfo2 {
+    display: none;
+
+}
+
+@media screen and (max-width : 800px) {
+    .teacherinfo2 {
+        display: block;
+    }
+    .teacherinfo2>h6{
+        color: #00684A;
+    }
+    .teacherinfo2>p{
+        font-weight: bold;
+    }
+    .keys {
+        display: none;
+    }
+
+    .values {
+        display: none;
+        
+    }
+
+    .emp-profile {
+        margin: 0;
+    }
+}
+
+@media  screen and (max-width:500px) {
+    #prof_block {
+        padding-left: 10px;
+    padding-right: 8px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding-left: 12%; */
+    }
+    #butn
+    {
+        width: 9rem;
+    margin-bottom: 1rem;
+    }
+    
+}

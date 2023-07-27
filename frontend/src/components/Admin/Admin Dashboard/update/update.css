@@ -1,0 +1,30 @@
+.class-form2-control {
+    width: 140px;
+    /* align-items: center; */
+    text-align: center;
+    border-radius: 4px;
+    height: 2rem;
+    margin-top: 10px;
+}
+
+.class-form1-control {
+    width: 280px;
+    /* align-items: center; */
+    text-align: center;
+    border-radius: 4px;
+    height: 2rem;
+    margin-bottom: 10px;
+}
+
+#abcy {
+    margin-top: 30px;
+}
+
+#abcy2 {
+    margin-top: 60px;
+}
+.user-not-found{
+    text-align: center;
+    padding: 190px 0;
+    
+}

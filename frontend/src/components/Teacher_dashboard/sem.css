@@ -1,0 +1,19 @@
+.card-body {
+    height: 10rem;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 5px rgb(121, 120, 120);
+    background: #2BB0A8;
+    transition: transform .2s;
+}
+.card-body:hover {
+    transform: scale(1.02);
+  }
+.semheadline {
+    text-align: center;
+    margin-bottom: 2rem;
+}

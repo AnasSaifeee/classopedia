@@ -1,0 +1,39 @@
+/* body
+{  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+@keyframes rotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.loader
+{ 
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 100px;
+    width: 100px;
+    /* transform: rotate(180deg); */
+}
+
+.loadercontainer
+{       
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 500;
+        
+}
