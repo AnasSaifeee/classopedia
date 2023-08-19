@@ -32,7 +32,7 @@ const Attendancereport = ({subjectdata}) => {
   const [loader, setloader] = useState(true)
   console.log("runnibg")
   const fetchdata = async () => {
-    const response = await fetch(`https://isd-b4ev.onrender.com/attendance/student/${subject}`, {
+    const response = await fetch(`https://classopedia.onrender.com/attendance/student/${subject}`, {
       method: "GET",
       headers: {
         Accept: "application/json",

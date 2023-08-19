@@ -90,7 +90,7 @@ function App() {
   const [studentdata,setStudentdata]=useState("")
   async function populate(e) {
 
-    const req = await fetch(`https://isd-b4ev.onrender.com/teacherverify`, {
+    const req = await fetch(`https://classopedia.onrender.com/teacherverify`, {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -156,7 +156,7 @@ function App() {
 
     setVisible(false)
 
-    const req = await fetch('https://isd-b4ev.onrender.com/dashboard', {
+    const req = await fetch('https://classopedia.onrender.com/dashboard', {
       method: "GET",
       headers: {
         Accept: "application/json",

@@ -14,7 +14,7 @@ const SubmittedAssignments = ({assid}) => {
   const [string,setString]=useState("")
   const [loader,setloader]=useState(true)
  const fetchdata = async () => {
-    const response = await fetch(`https://isd-b4ev.onrender.com/submissions/${assid}`, {
+    const response = await fetch(`https://classopedia.onrender.com/submissions/${assid}`, {
       method: "GET",
       headers: {
         Accept: "application/json",

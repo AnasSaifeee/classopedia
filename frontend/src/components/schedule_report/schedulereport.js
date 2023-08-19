@@ -29,7 +29,7 @@ const Classreport = () => {
     const year = newdate.getFullYear()
 
     const fetchdata=async()=>{
-        const response=await fetch(`https://isd-b4ev.onrender.com/${params.schrparam}`, {
+        const response=await fetch(`https://classopedia.onrender.com/${params.schrparam}`, {
             method: "GET",
             headers: {
                 Accept: "application/json",

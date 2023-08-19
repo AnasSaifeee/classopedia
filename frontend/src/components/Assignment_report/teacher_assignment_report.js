@@ -22,7 +22,7 @@ const Assignmentreport = ({setassid}) => {
   const [string, setString] = useState("")
   
   const fetchdata = async () => {
-    const response = await fetch("https://isd-b4ev.onrender.com/assignmentreportteacher", {
+    const response = await fetch("https://classopedia.onrender.com/assignmentreportteacher", {
       method: "GET",
       headers: {
         Accept: "application/json",

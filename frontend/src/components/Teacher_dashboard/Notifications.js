@@ -17,7 +17,7 @@ const Notifications = () => {
 
     
     const fetchdata=async()=>{
-        const response = await fetch("https://isd-b4ev.onrender.com/assignmentsubmit", {
+        const response = await fetch("https://classopedia.onrender.com/assignmentsubmit", {
       
             method: "GET",
             headers: {

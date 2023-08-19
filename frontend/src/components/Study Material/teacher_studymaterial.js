@@ -21,7 +21,7 @@ const Studymaterial_report = () => {
   const [string, setString] = useState("")
   
   const fetchdata = async () => {
-    const response = await fetch("https://isd-b4ev.onrender.com/studymaterial_teacher", {
+    const response = await fetch("https://classopedia.onrender.com/studymaterial_teacher", {
       method: "GET",
       headers: {
         Accept: "application/json",

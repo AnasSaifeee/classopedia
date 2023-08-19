@@ -26,7 +26,7 @@ const Assignmentreport = () => {
 
 
   const fetchdata = async () => {
-    const response = await fetch("https://isd-b4ev.onrender.com/assignmentreportstudent", {
+    const response = await fetch("https://classopedia.onrender.com/assignmentreportstudent", {
       method: "GET",
       headers: {
         Accept: "application/json",

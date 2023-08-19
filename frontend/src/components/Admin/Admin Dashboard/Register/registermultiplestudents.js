@@ -31,7 +31,7 @@ function StudentRegister() {
   async function RegisterAll(e) {
     e.preventDefault()
 
-    const response = await fetch("https://isd-b4ev.onrender.com/registerall", {
+    const response = await fetch("https://classopedia.onrender.com/registerall", {
       method: "POST",
       headers: {
         Accept: "application/json",

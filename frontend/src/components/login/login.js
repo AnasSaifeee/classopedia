@@ -29,7 +29,7 @@ const Login = ({setrenderstud}) => {
   const login = async (e) => {
     setVisible(false);
     e.preventDefault();
-    await fetch("https://isd-b4ev.onrender.com/login", {
+    await fetch("https://classopedia.onrender.com/login", {
       method: "POST",
       headers: {
         Accept: "application/json",

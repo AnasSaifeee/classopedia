@@ -15,7 +15,7 @@ app.use(express.json({ limit: '10mb' }));
 // Middleware
 app.use(express.json());
 app.use((req, res, next) => {
-  console.log(req.path, req.method);
+  
   next();
 });
 const PORT = process.env.PORT;
@@ -26,7 +26,7 @@ const server = app.listen(
 // const server = require('http').createServer();
 const io = require('socket.io')(server, {
   cors: {
-    origin: "https://classopedia-iic.netlify.app",
+    origin: "https://classopediaa.netlify.app",
    }
 });
 io.on('connection', (socket) => {
@@ -74,20 +74,5 @@ socket.on("typing", (payload) => {
   });
 });
 
-// Routes
 app.use('/', userRoutes);
 
-// Connect to DB
-// mongoose
-//   .connect(process.env.MONG_URI)
-//   .then(() => {
-//     // Require socketServer.js
-//     const io = require('./socketServer');
-
-//    server= app.listen(process.env.PORT, () => {
-//       console.log('Connected to db listening at port 4000!');
-//     });
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });

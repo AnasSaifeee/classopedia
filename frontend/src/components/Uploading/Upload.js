@@ -60,7 +60,7 @@ function Upload({ teacher, subjects, setrender,render }) {
         formData.append("deadline", deadline);
 
         setloader(true)
-        const response = await fetch("https://isd-b4ev.onrender.com/upload/assignment" , {
+        const response = await fetch("https://classopedia.onrender.com/upload/assignment" , {
           method: "POST",
           headers: {
             Accept: "application/json",
@@ -92,7 +92,7 @@ function Upload({ teacher, subjects, setrender,render }) {
         formData.append("description", description);
 
         setloader(true)
-        const response = await fetch("https://isd-b4ev.onrender.com/upload/studymaterial", {
+        const response = await fetch("https://classopedia.onrender.com/upload/studymaterial", {
           method: "POST",
           headers: {
             Accept: "application/json",

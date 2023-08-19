@@ -47,12 +47,11 @@ const Chat = ({ teacherData, studentdata }) => {
     socket.emit("typing", { username, room: classroom, isTyping });
   };
 
-// Inside useEffect(() => {...})
 
 useEffect(() => {
-  const newSocket = io.connect("https://isd-b4ev.onrender.com"); // Change to your server URL
+  const newSocket = io.connect("https://classopedia.onrender.com"); 
   setSocket(newSocket);
-  fetch(`https://isd-b4ev.onrender.com/api/room/${classroom}/messages`) // Change to your server URL
+  fetch(`https://classopedia.onrender.com/api/room/${classroom}/messages`) 
     .then(response => response.json())
     .then(messages => {
       setChat(messages);
@@ -70,20 +69,19 @@ useEffect(() => {
     setChat((prevChat) => [...prevChat, payload]);
   });
 
-  // Listen for "typing" event from the server
   newSocket.on("typing", (payload) => {
     const { username } = payload;
     console.log(username);
     setTypingUser(username);
   });
 
-  // Listen for "stop typing" event from the server
   newSocket.on("stop typing", () => {
-    setTypingUser(null); // Update the state to remove the typing user from the header
+    setTypingUser(null); 
   });
 
   return () => {
     newSocket.emit("leaveRoom", classroom);
+    setTypingUser(null)
     newSocket.disconnect();
   };
 }, []);
@@ -137,7 +135,6 @@ useEffect(() => {
             onChange={(e) => setMessage(e.target.value)}
             onInput={() => sendTypingStatus(true)} 
             onBlur={() => sendTypingStatus(false)}
-            // onClick={()=>sendTypingStatus(true)}
             className="chat-input"
             autoComplete="off"
           />
@@ -147,10 +144,8 @@ useEffect(() => {
         </form>
       </div>
 
-      {/* Display typing user */}
       
 
-      {/* Loader backdrop */}
       {loader && (
         <Backdrop
           sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}

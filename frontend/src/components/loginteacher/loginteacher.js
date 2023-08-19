@@ -31,7 +31,7 @@ const Loginteacher = ({setrender,setsuccess}) => {
     setsuccess(false)
     setVisible(false);
     e.preventDefault();
-    await fetch("https://isd-b4ev.onrender.com/loginteacher", {
+    await fetch("https://classopedia.onrender.com/loginteacher", {
       method: "POST",
       headers: {
         Accept: "application/json",

@@ -28,7 +28,7 @@ const Sem4Attendance = () => {
   const [heading, setHeading] = useState("Overall Attendance Report")
 
   const fetchdata = async () => {
-    const response = await fetch("https://isd-b4ev.onrender.com/attendancereport/sem4", {
+    const response = await fetch("https://classopedia.onrender.com/attendancereport/sem4", {
       method: "GET",
       headers: {
         Accept: "application/json",

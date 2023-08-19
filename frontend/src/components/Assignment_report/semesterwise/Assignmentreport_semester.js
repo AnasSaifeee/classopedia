@@ -52,7 +52,7 @@ const Assignmentreport = ({subjectdata}) => {
     setloader(true);
     setString("")
     setVisible(false)
-    const response1 = await fetch(`https://isd-b4ev.onrender.com/assignmentreportstudent/${subject}`, {
+    const response1 = await fetch(`https://classopedia.onrender.com/assignmentreportstudent/${subject}`, {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -96,7 +96,7 @@ const Assignmentreport = ({subjectdata}) => {
     formData.append('files', localStorage.getItem(_id));
     formData.append('enrollNum', user.enrollNum);
     formData.append('subject', subject);
-    const response = await fetch("https://isd-b4ev.onrender.com/assignmentsubmit", {
+    const response = await fetch("https://classopedia.onrender.com/assignmentsubmit", {
       method: "POST",
       headers: {
         Accept: "application/json",

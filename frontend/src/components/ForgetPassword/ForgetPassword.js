@@ -12,7 +12,7 @@ const ForgetPassword = () => {
     const [message,setmessage]=useState(false)
     async function sendmail(){
         console.log("reqst rcvd")
-      const response = await fetch(`https://isd-b4ev.onrender.com/forgetpassword/${user}`,{
+      const response = await fetch(`https://classopedia.onrender.com/forgetpassword/${user}`,{
             method: "POST",
             headers: {
               Accept: "application/json",

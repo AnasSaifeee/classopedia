@@ -67,7 +67,7 @@ const Filters = ({
     }
 
     const response = await fetch(
-      `https://isd-b4ev.onrender.com/attendancereport/${semparam}/${filter}/${filterval}/${date1}`,
+      `https://classopedia.onrender.com/attendancereport/${semparam}/${filter}/${filterval}/${date1}`,
       {
         method: "GET",
         headers: {

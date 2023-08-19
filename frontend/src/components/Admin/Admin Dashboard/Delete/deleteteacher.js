@@ -20,7 +20,7 @@ function DeleteTeacher() {
         if(Teacher_id){
             document.getElementById("input-12").style.borderColor = "black";
             document.getElementById("input-12").style.backgroundColor = "white";
-            fetch(`https://isd-b4ev.onrender.com/api/teachers/${Teacher_id}`)
+            fetch(`https://classopedia.onrender.com/api/teachers/${Teacher_id}`)
                 .then(response => response.json())
                 .then(data => {
                     setloader(false)
@@ -45,7 +45,7 @@ function DeleteTeacher() {
         if (confirmed) {
             setloader(true)
         try {
-            const response = await fetch(`https://isd-b4ev.onrender.com/api/teachers/${Teacher_id}`, {
+            const response = await fetch(`https://classopedia.onrender.com/api/teachers/${Teacher_id}`, {
                 method: 'DELETE',
             });
             const data = await response.json();

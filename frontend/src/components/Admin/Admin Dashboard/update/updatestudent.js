@@ -21,7 +21,7 @@ function StudentUpdate() {
             document.getElementById("input-12").style.borderColor = "black";
             document.getElementById("input-12").style.backgroundColor = "white";
 
-            fetch(`https://isd-b4ev.onrender.com/api/students/${enrollNum}`)
+            fetch(`https://classopedia.onrender.com/api/students/${enrollNum}`)
                 .then(response => response.json())
                 .then(data => {
 
@@ -54,7 +54,7 @@ function StudentUpdate() {
                 semester
             };
 
-            fetch(`https://isd-b4ev.onrender.com/api/students/${enrollNum}`, {
+            fetch(`https://classopedia.onrender.com/api/students/${enrollNum}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

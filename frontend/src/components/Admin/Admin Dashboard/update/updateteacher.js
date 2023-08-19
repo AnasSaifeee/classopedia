@@ -19,7 +19,7 @@ function TeacherUpdate() {
         if(Teacher_id){
             document.getElementById("input-12").style.borderColor = "black";
             document.getElementById("input-12").style.backgroundColor = "white";
-        fetch(`https://isd-b4ev.onrender.com/api/teachers/${Teacher_id}`)
+        fetch(`https://classopedia.onrender.com/api/teachers/${Teacher_id}`)
             .then(response => response.json())
             .then(data => {
                 setloader(false)
@@ -45,7 +45,7 @@ function TeacherUpdate() {
             contactNum,
         };
 
-        fetch(`https://isd-b4ev.onrender.com/api/teachers/${Teacher_id}`, {
+        fetch(`https://classopedia.onrender.com/api/teachers/${Teacher_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

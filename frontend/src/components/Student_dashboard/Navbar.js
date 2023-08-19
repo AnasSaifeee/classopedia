@@ -23,7 +23,7 @@ function Navbar() {
     const [sem4, setSem4] = useState(false)
 
     async function populatenavbar() {
-        const req = await fetch('https://isd-b4ev.onrender.com/dashboard', {
+        const req = await fetch('https://classopedia.onrender.com/dashboard', {
             headers: {
                 'x-access-token': localStorage.getItem('token'),
 

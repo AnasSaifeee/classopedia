@@ -33,7 +33,7 @@ const Classes_taken = () => {
     
   }
    const fetchdata = async () => {
-    const response = await fetch("https://isd-b4ev.onrender.com/classestaken", {
+    const response = await fetch("https://classopedia.onrender.com/classestaken", {
       method: "GET",
       headers: {
         Accept: "application/json",

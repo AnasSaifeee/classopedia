@@ -20,7 +20,7 @@ function DeleteStudent() {
         if(enrollNum){
             document.getElementById("input-12").style.borderColor = "black";
             document.getElementById("input-12").style.backgroundColor = "white";
-            fetch(`https://isd-b4ev.onrender.com/api/students/${enrollNum}`)
+            fetch(`https://classopedia.onrender.com/api/students/${enrollNum}`)
                 .then(response => response.json())
                 .then(data => {
                     setloader(false)
@@ -46,7 +46,7 @@ function DeleteStudent() {
         if (confirmed) {
             setloader(true)
         try {
-            const response = await fetch(`https://isd-b4ev.onrender.com/api/students/${enrollNum}`, {
+            const response = await fetch(`https://classopedia.onrender.com/api/students/${enrollNum}`, {
                 method: 'DELETE',
             });
             const data = await response.json();

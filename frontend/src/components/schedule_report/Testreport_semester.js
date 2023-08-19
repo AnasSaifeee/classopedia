@@ -25,7 +25,7 @@ const Testreport = ({subjectdata}) => {
       setVisible(false)
     setString("")
       setloader(true)
-        const response=await fetch(`https://isd-b4ev.onrender.com/testschedule/${subject}`, {
+        const response=await fetch(`https://classopedia.onrender.com/testschedule/${subject}`, {
             method: "GET",
             headers: {
                 Accept: "application/json",

@@ -43,7 +43,7 @@ const ChangePassword = () => {
       setIfpasswordsame(false);
       setIfconfirmpassworddifferent(false);
       setloader(true)
-      const req = await fetch('https://isd-b4ev.onrender.com/dashboard/changepassword', {
+      const req = await fetch('https://classopedia.onrender.com/dashboard/changepassword', {
         method: "PATCH",
         headers: {
 

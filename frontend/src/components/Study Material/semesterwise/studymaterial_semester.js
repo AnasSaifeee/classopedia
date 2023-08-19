@@ -31,7 +31,7 @@ const Classreport = ({subjectdata}) => {
     setVisible(false)
     setString("")
       setloader(true)
-    const response = await fetch(`https://isd-b4ev.onrender.com/studymaterial_student/${subject}`, {
+    const response = await fetch(`https://classopedia.onrender.com/studymaterial_student/${subject}`, {
       method: "GET",
       headers: {
         Accept: "application/json",

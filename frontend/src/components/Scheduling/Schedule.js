@@ -51,7 +51,7 @@ const Schedule = ({ teacher, subjects, setrender, render }) => {
       setloader(true);
       e.preventDefault();
       const req = await fetch(
-        `https://isd-b4ev.onrender.com/${params.schparam}`,
+        `https://classopedia.onrender.com/${params.schparam}`,
         {
           method: "POST",
           headers: {
