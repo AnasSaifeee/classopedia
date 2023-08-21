@@ -81,7 +81,6 @@ useEffect(() => {
 
   return () => {
     newSocket.emit("leaveRoom", classroom);
-    setTypingUser(null)
     newSocket.disconnect();
   };
 }, []);
